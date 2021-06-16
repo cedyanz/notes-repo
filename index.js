@@ -42,8 +42,8 @@ let notes = [
     res.send('<h1>Hello World!</h1>')
   })
   
-  app.get('/api/notes', (request, response) => {
-    response.send(notes)
+  app.get('/api/notes', (req, res) => {
+   response.send(notes)
   })
   
   app.get('/api/notes/:id', (request, response) => {
