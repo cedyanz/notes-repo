@@ -43,7 +43,7 @@ let notes = [
   })
   
   app.get('/api/notes', (req, res) => {
-   response.send(notes)
+   res.send(notes)
   })
   
   app.get('/api/notes/:id', (request, response) => {
