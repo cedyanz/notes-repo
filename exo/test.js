@@ -1,6 +1,9 @@
 const express = require('express')
-const app = express()
+app.use(express.static('build'))
 const morgan = require("morgan")
+const cors = require('cors')
+
+app.use(cors())
 
 app.use(
   express.urlencoded({
