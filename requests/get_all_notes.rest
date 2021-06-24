@@ -1,7 +1,8 @@
-POST http://localhost:3001/api/persons
+POST http://localhost:3001/api/notes/ 
 Content-Type: application/json
 
 {
-    "na": "VS code api clint is awesome",
-    "important": false
+"content": "From today yes", 
+"important": true
 }
+
